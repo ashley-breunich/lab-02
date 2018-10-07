@@ -1,6 +1,6 @@
 'use strict';
 
-const SeaCreature = require('../sea-creatures-factory.js');
+const SeaCreature = require('../sea-creatures-class.js');
 
 describe('Sea Creature', () => {
 
@@ -44,7 +44,7 @@ describe('Sea Creature', () => {
     });
   
     it('They are invertebrates', () => {
-      expect(lobster.invertebrate).toBeTruthy();
+      expect(lobster.invertebrate()).toEqual('I have an exoskeleton!');
     });
   });
 

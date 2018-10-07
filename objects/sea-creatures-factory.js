@@ -6,17 +6,6 @@ const SeaCreature = () => ({
   },
 });
 
-// class SeaCreature {
-//     constructor(name, claws, phylum) {
-//       this.name = name;
-//       this.claws = claws;
-//       this.phylum = phylum;
-//     }
-//     swim() {
-//       return 'I\'m swimming!!!'; 
-//     }
-//   }
-
 function Fish(name) {
   let claws = false;
   let phylum = 'Chordata';
