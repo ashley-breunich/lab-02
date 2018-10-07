@@ -1,6 +1,6 @@
 'use strict';
 
-const SeaCreature = require('../sea-creatures-class.js');
+const SeaCreature = require('../sea-creatures-factory.js');
 
 describe('Sea Creature', () => {
 
