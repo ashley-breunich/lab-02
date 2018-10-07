@@ -54,6 +54,42 @@ In the `objects/__tests__` folder, you'll find a file called `vehicle.test.js` t
     * `filter()`
     * `reduce()`
 
-##  Documentation
-Include your travis badge at the top of your `README.md` file
-In your `README.md`, describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and it's behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.
+### Documentation
+
+###### Car
+Airty: 2
+Data-Type: String, Number
+Output-Valid: Object
+Output-Invalid: Null
+
+###### Motorcycle 
+Airty: 2
+Data-Type: String, Number
+Output-Valid: Object
+Output-Invalid: Null
+
+###### Airplane
+Airty: 3
+Data-Type: String, Number, Boolean
+Output-Valid: Object
+Output-Invalid: Null
+
+###### Helicopter 
+Airty: 3
+Data-Type: String, Number, Boolean
+Output-Valid: Object
+Output-Invalid: Null
+
+###### Fish 
+Airty: 3
+Data-Type: String, Boolean, String
+Output-Valid: Object
+Output-Invalid: Null
+
+###### Lobster 
+Airty: 3
+Data-Type: String, Boolean, String
+Output-Valid: Object
+Output-Invalid: Null
+
+The objects part of this assignment took me around 5.5 hours to complete.  
