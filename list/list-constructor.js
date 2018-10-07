@@ -8,6 +8,7 @@ function List() {
  * Add item to the end of the list
  * @param item
  */
+
 List.prototype.push = function(item) {
   this.data[this.length] = item;
   this.length++;
