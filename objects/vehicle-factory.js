@@ -18,7 +18,7 @@ function Car(name) {
   return Object.freeze(car);
 }
 
-function Motorcycle() {
+function Motorcycle(name) {
   let wheels = 2;
   let motorcycle = Object.assign({}, {name}, {wheels}, {wheelie}, Vehicle());
   
@@ -26,4 +26,30 @@ function Motorcycle() {
   return Object.freeze(motorcycle);
 }
 
-module.exports = {Car, Motorcycle};
+const FlyingVehicle = () => ({
+  takeoff() {
+    return 'Getting ready for takeoff';
+  },
+  fly() {
+    return 'I am flying high in the sky!'; 
+  },
+  land() {
+    return 'Stopping';
+  },
+});
+
+function Airplane(name) {
+  let passengers = 100;
+  let firstClass = true;
+  let airplane = Object.assign({}, {name}, {passengers}, {firstClass}, FlyingVehicle());
+  return Object.freeze(airplane);
+}
+
+function Helicopter(name) {
+  let passengers = 8;
+  let firstClass = false;
+  let helicopter = Object.assign({}, {name}, {passengers}, {firstClass}, FlyingVehicle());
+  return Object.freeze(helicopter);
+}
+
+module.exports = {Car, Motorcycle, Airplane, Helicopter};
