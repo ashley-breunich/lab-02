@@ -37,9 +37,10 @@ class Motorcycle extends Vehicle {
 }
 
 class FlyingVehicle {
-  constructor(name, passengers) {
+  constructor(name, passengers, firstClass) {
     this.name = name;
     this.passengers = passengers;
+    this.firstClass = firstClass;
   }
 
   takeoff() {
@@ -60,8 +61,8 @@ class Airplane extends FlyingVehicle {
     super();
     this.name = name;
     this.passengers = 100;
+    this.firstClass = true;
   }
-
 }
 
 class Helicopter extends FlyingVehicle {
@@ -69,8 +70,8 @@ class Helicopter extends FlyingVehicle {
     super();
     this.name = name;
     this.passengers = 8;
+    this.firstClass = false;
   }
-    
 }
 
 module.exports = {Car, Motorcycle, Airplane, Helicopter};
