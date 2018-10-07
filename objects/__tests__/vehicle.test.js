@@ -1,13 +1,13 @@
 'use strict';
 
-const Vehicle = require('../constructor.js');
+const Vehicle = require('../vehicle-factory.js');
 
 describe('Vehicles', () => {
 
   describe('Car', () => {
 
     let car = new Vehicle.Car('foo');
-
+    console.log(car);
     it('has 4 wheels', () => {
       expect(car.wheels).toEqual(4);
     });
